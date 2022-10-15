@@ -26,8 +26,30 @@ public class ListFiltererTest {
         Mockito.when(filter1.accept(-1)).thenReturn(false);
         Mockito.when(filter1.accept(-3)).thenReturn(false);
 
+        DivisibleByFilter filter2=new DivisibleByFilter(2);
+        List<Integer> lista1=Arrays.asList(2,6,8,10,14,68);
+        List<Integer> lista2=Arrays.asList(1,7,9,97,65,79);
 
+        for (int n:lista1){
+            Assertions.assertTrue(filter2.accept(n));
+        }
 
+        for (int n:lista2){
+            Assertions.assertFalse(filter2.accept(n));
+        }
+
+        PositiveFilter filter3=new PositiveFilter();
+        List<Integer> lista3= Arrays.asList(1,5,7,8,9,10,15,89);
+
+        for (int n:lista3){
+            Assertions.assertTrue(filter3.accept(n));
+        }
+
+        List<Integer> lista4=Arrays.asList(-1,-6,-7,-10,-50);
+
+        for (int n:lista4){
+            Assertions.assertFalse(filter3.accept(n));
+        }
 
     }
 }
