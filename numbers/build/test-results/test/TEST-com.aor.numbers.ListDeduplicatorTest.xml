@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.numbers.ListDeduplicatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-15T00:28:32" hostname="ASUS-TPM" time="0.032">
-  <properties/>
-  <testcase name="deduplicate()" classname="com.aor.numbers.ListDeduplicatorTest" time="0.004"/>
-  <testcase name="deduplicate2()" classname="com.aor.numbers.ListDeduplicatorTest" time="0.026"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
